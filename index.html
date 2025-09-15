@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List - Musei di Bologna</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>🏛️ Musei di Bologna</h1>
+            <p>Organizza le tue visite ai musei di Bologna</p>
+        </header>
+
+        <div class="controls">
+            <div class="input-section">
+                <input type="text" id="taskInput" placeholder="Aggiungi un nuovo museo..." maxlength="100">
+                <input type="date" id="dateInput">
+                <button id="addBtn">Aggiungi</button>
+            </div>
+
+            <div class="filter-section">
+                <div class="filters">
+                    <select id="statusFilter">
+                        <option value="all">Tutti</option>
+                        <option value="pending">Da visitare</option>
+                        <option value="completed">Visitati</option>
+                    </select>
+                    <input type="text" id="searchInput" placeholder="Cerca museo...">
+                    <select id="sortBy">
+                        <option value="name">Ordina per nome</option>
+                        <option value="date">Ordina per data</option>
+                        <option value="status">Ordina per stato</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="bulk-actions">
+                <button id="markAllBtn">Segna tutti come visitati</button>
+                <button id="clearCompletedBtn">Rimuovi visitati</button>
+                <button id="clearAllBtn">Cancella tutto</button>
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="stat">
+                <span class="stat-number" id="totalCount">0</span>
+                <span class="stat-label">Totale</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number" id="pendingCount">0</span>
+                <span class="stat-label">Da visitare</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number" id="completedCount">0</span>
+                <span class="stat-label">Visitati</span>
+            </div>
+        </div>
+
+        <div class="task-list" id="taskList">
+            <!-- Le task verranno renderizzate qui dinamicamente -->
+        </div>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🏛️ Musei di Bologna</h3>
+                    <p>Organizza le tue visite ai musei della città delle Due Torri</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Informazioni</h4>
+                    <p>To Do List per musei</p>
+                    <p>Gestione con Map JavaScript</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Musei inclusi</h4>
+                    <p>8 musei storici</p>
+                    <p>Con date e stati</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; Realizzato da Michele Carnimeo – Progetto Musei Bologna © 2025</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- <script src="array-script.js"></script>  -->
+
+    <script src="map-script.js"></script>
+
+</body>
+
+</html>

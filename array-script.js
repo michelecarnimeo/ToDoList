@@ -1,17 +1,9 @@
-// ========================================
-// TO DO LIST MUSEI BOLOGNA - SCRIPT CON ARRAY
-// ========================================
-// Questo script gestisce la To Do List dei musei di Bologna
-// utilizzando un array per memorizzare i task
-// Autore: Michele Carnimeo
-// Data: 2025
-
 /**
- * Classe Task per rappresentare un museo nella lista
- * @param {number} id - Identificatore univoco del task
- * @param {string} name - Nome del museo
- * @param {string} date - Data della visita (formato YYYY-MM-DD)
- * @param {boolean} completed - Stato di completamento (visitato/non visitato)
+ // Classe Task per rappresentare un museo nella lista
+ @param {number} id - Identificatore univoco del task
+ @param {string} name - Nome del museo
+ @param {string} date - Data della visita (formato YYYY-MM-DD)
+ @param {boolean} completed - Stato di completamento (visitato/non visitato)
  */
 class Task {
     constructor(id, name, date, completed = false) {
@@ -32,43 +24,42 @@ let tasks = [];
  */
 const initialMuseums = [
     {
-        name: "Museo Civico Archeologico",        // Museo archeologico principale
-        date: "2024-02-15",                       // Data di visita programmata
-        completed: false                          // Stato: da visitare
-    },
-    {
-        name: "Pinacoteca Nazionale di Bologna",  // Galleria d'arte nazionale
-        date: "2024-02-20",
-        completed: true                           // Stato: già visitato
-    },
-    {
-        name: "Museo della Storia di Bologna",    // Museo storico della città
-        date: "2024-03-01",
+        name: "Museo Civico Archeologico",
+        date: "2025-09-15",
         completed: false
     },
     {
-        name: "MAMbo - Museo d'Arte Moderna di Bologna", // Museo d'arte contemporanea
-        date: "2024-03-10",
-        completed: false
-    },
-    {
-        name: "Museo Internazionale della Musica", // Museo dedicato alla musica
-        date: "2024-03-15",
+        name: "Pinacoteca Nazionale di Bologna",
+        date: "2025-09-15",
         completed: true
     },
     {
-        name: "Museo Civico Medievale",           // Museo del periodo medievale
-        date: "2024-03-20",
+        name: "Museo della Storia di Bologna",
+        date: "2024-09-15",
         completed: false
     },
     {
-        name: "Museo di Palazzo Poggi",           // Museo universitario
-        date: "2024-04-01",
+        name: "MAMbo - Museo d'Arte Moderna di Bologna",
+        date: "2025-09-15",
         completed: false
     },
     {
-        name: "Museo della Tappezzeria",          // Museo specializzato in tessuti
-        date: "2024-04-05",
+        name: "Museo Internazionale della Musica",
+        date: "2025-09-15",
+        completed: true
+    },
+    {
+        name: "Museo Civico Medievale",
+        completed: false
+    },
+    {
+        name: "Museo di Palazzo Poggi",
+        date: "2025-09-15",
+        completed: false
+    },
+    {
+        name: "Museo della Tappezzeria",
+        date: "2025-09-15",
         completed: false
     }
 ];

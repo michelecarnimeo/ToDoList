@@ -1,11 +1,3 @@
-// ========================================
-// TO DO LIST MUSEI BOLOGNA - SCRIPT CON MAP
-// ========================================
-// Questo script gestisce la To Do List dei musei di Bologna
-// utilizzando una Map per memorizzare i task
-// Autore: Michele Carnimeo
-// Data: 2025
-
 /**
  * Classe Task per rappresentare un museo nella lista
  * @param {number} id - Identificatore univoco del task
@@ -33,42 +25,42 @@ let tasksMap = new Map();
  */
 const initialMuseums = [
     {
-        name: "Museo Civico Archeologico",        // Museo archeologico principale
-        date: "2025-02-15",                       // Data di visita programmata
-        completed: false                          // Stato: da visitare
+        name: "Museo Civico Archeologico",
+        date: "2025-02-15",
+        completed: false
     },
     {
-        name: "Pinacoteca Nazionale di Bologna",  // Galleria d'arte nazionale
+        name: "Pinacoteca Nazionale di Bologna",
         date: "2025-02-20",
-        completed: true                           // Stato: già visitato
+        completed: true
     },
     {
-        name: "Museo della Storia di Bologna",    // Museo storico della città
+        name: "Museo della Storia di Bologna",
         date: "2025-03-01",
         completed: false
     },
     {
-        name: "MAMbo - Museo d'Arte Moderna di Bologna", // Museo d'arte contemporanea
+        name: "MAMbo - Museo d'Arte Moderna di Bologna",
         date: "2025-03-10",
         completed: false
     },
     {
-        name: "Museo Internazionale della Musica", // Museo dedicato alla musica
+        name: "Museo Internazionale della Musica",
         date: "2025-03-15",
         completed: true
     },
     {
-        name: "Museo Civico Medievale",           // Museo del periodo medievale
+        name: "Museo Civico Medievale",
         date: "2025-03-20",
         completed: false
     },
     {
-        name: "Museo di Palazzo Poggi",           // Museo universitario
+        name: "Museo di Palazzo Poggi",
         date: "2025-04-01",
         completed: false
     },
     {
-        name: "Museo della Tappezzeria",          // Museo specializzato in tessuti
+        name: "Museo della Tappezzeria",
         date: "2025-04-05",
         completed: false
     }
@@ -115,8 +107,8 @@ function updateNextId() {
 
 /**
  * Funzione per aggiungere un nuovo museo alla lista
- * @param {string} name - Nome del museo
- * @param {string} date - Data della visita (formato YYYY-MM-DD)
+ * @param {string} name 
+ * @param {string} date 
  */
 function addTask(name, date) {
     // Validazione: controlla che il nome non sia vuoto
@@ -321,8 +313,8 @@ function updateStats() {
 
 /**
  * Funzione per formattare la data in formato italiano leggibile
- * @param {string} dateString - Data in formato YYYY-MM-DD
- * @returns {string} Data formattata in italiano
+ * @param {string} dateString 
+ * @returns {string} 
  */
 function formatDate(dateString) {
     const date = new Date(dateString);
